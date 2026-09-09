@@ -1,0 +1,23 @@
+# Speed-focused profile for faster throughput.
+# Keeps tracking/action pipeline intact, but reduces heavy compute.
+
+input: data/VIRAT2.mp4
+output: data/VIROUTLOGs3_fast.mp4
+
+yolo_weights: weights/yolov8n.pt
+action_model: x3d_s
+tracker: config/botsort_occlusion.yaml
+device: cuda:0
+
+# Large wins usually come from these three knobs:
+infer_stride: 8
+track_crop_size: 224
+enable_segmentation: false
+
+# Keep context crop, but slightly lower than high-accuracy profile.
+action_expand_scale: 1.3
+
+# Reduce logging/storage overhead while benchmarking speed.
+event_log_path: logs/virat_events_fast.jsonl
+event_log_frames: false
+save_events_db: false

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "high_conf_any_action",
+    "severity": "medium",
+    "action_labels": null,
+    "min_action_score": 0.8,
+    "min_consecutive_hits": 4,
+    "cooldown_frames": 75,
+    "message_template": "{rule_name}: subject {stable_id} is performing '{action_label}' with score {action_score}."
+  },
+  {
+    "name": "violent_actions",
+    "severity": "high",
+    "action_labels": ["fighting", "punching bag", "wrestling"],
+    "min_action_score": 0.8,
+    "min_consecutive_hits": 4,
+    "cooldown_frames": 45,
+    "message_template": "Potential violent behavior detected for subject {stable_id}: '{action_label}' (score {action_score})."
+  }
+]

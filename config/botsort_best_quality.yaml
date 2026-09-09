@@ -1,0 +1,25 @@
+# BoT-SORT config optimized for BEST QUALITY ReID (highest ID stability)
+# Tuned for occlusion recovery + partial body visibility + crowded scenes
+# Trade-off: slower than real-time, but most stable ID tracking
+
+tracker_type: botsort
+
+# Detection association thresholds (conservative for quality)
+track_high_thresh: 0.15
+track_low_thresh: 0.03
+new_track_thresh: 0.50
+match_thresh: 0.65
+fuse_score: True
+
+# Extended track buffer for occlusion recovery
+track_buffer: 200
+
+# Camera motion compensation (essential for moving cam)
+gmc_method: sparseOptFlow
+
+# ReID tuning for best quality
+# Ultralytics will auto-load best available ReID model (usually ResNet-based)
+with_reid: True
+proximity_thresh: 0.15
+appearance_thresh: 0.35
+model: auto

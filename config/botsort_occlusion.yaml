@@ -1,0 +1,23 @@
+# BoT-SORT config tuned for temporary full occlusions (e.g., person behind trees)
+# Use with: --tracker config/botsort_occlusion.yaml
+
+tracker_type: botsort
+
+# Detection association thresholds
+track_high_thresh: 0.18
+track_low_thresh: 0.05
+new_track_thresh: 0.45
+match_thresh: 0.70
+fuse_score: True
+
+# Keep lost tracks alive longer so they can recover same ID after occlusion
+track_buffer: 200
+
+# Camera motion compensation
+gmc_method: sparseOptFlow
+
+# ReID tuning for re-association after re-appearance
+with_reid: True
+proximity_thresh: 0.25
+appearance_thresh: 0.45
+model: auto

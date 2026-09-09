@@ -1,0 +1,17 @@
+# Speed up Vercel uploads. Leading "/" limits patterns to the repo root so we
+# do not exclude frontend/src/data (Vite app needs those modules).
+venv
+.venv
+**/.venv
+__pycache__
+**/__pycache__
+*.pyc
+.pytest_cache
+.mypy_cache
+.git
+**/.git
+/data
+/weights
+*.log
+/logs
+frontend/node_modules

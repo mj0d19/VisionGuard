@@ -1,0 +1,9 @@
+# Video Files Placeholder
+# 
+# Place your camera feed videos here:
+#   - cam1.mp4 (Main Entrance)
+#   - cam2.mp4 (Parking Lot)
+#   - cam3.mp4 (Hallway A)
+#   - cam4.mp4 (Server Room)
+#
+# These files will be served from /videos/ in the app.

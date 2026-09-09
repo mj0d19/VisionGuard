@@ -1,0 +1,8 @@
+{
+  "name": "visionguard",
+  "private": true,
+  "description": "Monorepo root — Vercel builds the Vite app in ./frontend",
+  "engines": {
+    "node": "20.x"
+  }
+}
