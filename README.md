@@ -165,21 +165,17 @@ Try the live demo:
 
 ## Screenshots
 
-### AI Video Analysis
-
-![VisionGuard Analysis](docs/images/analysis.png)
-
-### Event Timeline & Intelligence
-
-![VisionGuard Timeline](docs/images/timeline.png)
-
-### Smart Investigation
-
-![VisionGuard Investigation](docs/images/investigation.png)
-
-### System Dashboard
-
+### Live Monitoring Dashboard
 ![VisionGuard Dashboard](docs/images/dashboard.png)
+
+### Security Alerts
+![VisionGuard Alerts](docs/images/alerts.png)
+
+### Natural-Language Investigation
+![VisionGuard LLM Query](docs/images/llm-query.png)
+
+### AI Video Analysis
+![VisionGuard Demo Analysis](docs/images/demo-analysis.png)
 
 ---
 
